@@ -1,0 +1,27 @@
+.about {
+  width: 100vw;
+  height: 100vh;
+  background: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.about img {
+  width: 20vw;
+}
+.about .about_1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.about button {
+  width: 20vw;
+  height: 20vw;
+}
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/

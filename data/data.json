@@ -1,0 +1,36 @@
+{
+    "components":{
+        "header":{
+            "about":{
+                "imgSrc": "../static/images/perfil.jpg",
+                "imgAlt": "perfil",
+                "titulo":"HOLAS",
+                "descripcion": "Soy Super Kleber",
+                "buttonText":"..."
+            },
+            "menu":[
+                {
+                    "descripcion":"Contacto",
+                    "iconCode":"",
+                    "link": ""
+                },
+                {
+                    "descripcion":"Curriculum",
+                    "iconCode":"",
+                    "link": ""
+                },
+                {
+                    "descripcion":"Portafolio",
+                    "iconCode":"",
+                    "link": ""
+                },
+                {
+                    "descripcion":"Instagram",
+                    "iconCode":"",
+                    "link": ""
+                }
+            ]
+
+        }
+    }
+}

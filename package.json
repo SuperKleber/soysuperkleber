@@ -1,0 +1,30 @@
+{
+  "name": "soysuperkleber",
+  "version": "0.0.1",
+  "description": "web de kleber rivamontan",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperKleber/soysuperkleber.git"
+  },
+  "author": "kleber rivamontan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuperKleber/soysuperkleber/issues"
+  },
+  "homepage": "https://github.com/SuperKleber/soysuperkleber#readme",
+  "dependencies": {
+    "@zeit/next-less": "^1.0.1",
+    "less": "^3.8.1",
+    "next": "^7.0.2",
+    "next-routes": "^1.4.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
