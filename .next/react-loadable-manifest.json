@@ -7,10 +7,10 @@
       "publicPath": "static/chunks/0.js"
     }
   ],
-  "../style/header/_masterHeader.less": [
+  "../style/layout/_masterLayout.less": [
     {
-      "id": "./style/header/_masterHeader.less",
-      "name": "./style/header/_masterHeader.less",
+      "id": "./style/layout/_masterLayout.less",
+      "name": "./style/layout/_masterLayout.less",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
@@ -19,6 +19,20 @@
     {
       "id": 4,
       "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 5,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../style/header/_masterHeader.less": [
+    {
+      "id": "./style/header/_masterHeader.less",
+      "name": "./style/header/_masterHeader.less",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }

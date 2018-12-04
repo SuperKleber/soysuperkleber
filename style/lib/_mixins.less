@@ -2,6 +2,38 @@
     display: flex;
     justify-content: @justify-content;
     align-items: center;
-    text-align: center;
-     
+    text-align: center; 
+}
+.strong(@b: @morado; @c: @amarillo){
+    background: @b;
+    color: @c;
+    padding: @padding;
+    // border-radius: @border-radius;
+}
+
+//responsive
+.size(){
+    width: @bigSize;
+    height: @bigSize;
+    @media (max-width:@wideMobileWidth){
+        width: @size;
+        height: @size; 
+    }
+}
+
+//botones
+
+.button(){
+    border: 0;
+    background: none;
+    border-radius: @border-radius;
+    // padding: @padding;
+    box-shadow: @shadow;
+    outline: none;
+    cursor: pointer;
+}
+
+.a(){
+    text-decoration: none;
+    color: @morado;
 }

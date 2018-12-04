@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MenuElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MenuElement */ "./components/MenuElement.js");
 /* harmony import */ var _style_header_masterHeader_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/header/_masterHeader.less */ "./style/header/_masterHeader.less");
 /* harmony import */ var _style_header_masterHeader_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_header_masterHeader_less__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "E:\\proyectos\\soysuperkleber\\components\\Header.js";
+var _jsxFileName = "d:\\proyectos\\soysuperkleber\\components\\Header.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -27,13 +27,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
  //estilos
@@ -46,9 +48,29 @@ function (_Component) {
   _inherits(Header, _Component);
 
   function Header() {
+    var _getPrototypeOf2;
+
+    var _this;
+
     _classCallCheck(this, Header);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Header).apply(this, arguments));
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Header)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+      openMenu: false
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "openMenu", function (event) {
+      _this.setState({
+        openMenu: !_this.state.openMenu
+      });
+    });
+
+    return _this;
   }
 
   _createClass(Header, [{
@@ -56,23 +78,24 @@ function (_Component) {
     value: function render() {
       var data = this.props.data;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+        className: "header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 19
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 20
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "about_1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 21
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -80,58 +103,112 @@ function (_Component) {
         alt: data.about.imgAlt,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 22
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.openMenu,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 23
         },
         __self: this
       }, data.about.buttonText)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "about_2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 27
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 28
         },
         __self: this
       }, data.about.titulo), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 30
         },
         __self: this
-      }, data.about.descripcion))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "menuContainer",
+      }, " SOY  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 30
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "DESARROLADOR WEB"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), " ESPECIALIZADO EN FRONTEND UI/UX Y SOY PUBLICISTA EN ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "MARKETING DIGITAL")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "menuContainer",
+        id: "menuContainer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.openMenu,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, " ", "<", " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "menu",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 35
         },
         __self: this
       }, data.menu.map(function (element) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MenuElement__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          key: element,
           data: element,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 28
+            lineNumber: 40
           },
           __self: this
         });
-      }))));
+      }))), this.state.openMenu ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+        jsx: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, "\n                        .about{\n                            background: url(\"../static/images/fondo-morado.jpg\");\n                            background-attachment: fixed;\n                        }\n                        .menuContainer{\n                            left: 0;\n                            background: url(\"../static/images/fondo-amarillo.jpg\");\n                            background-attachment: fixed;\n                        }\n                    ") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+        jsx: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, "\n                        .about{\n                            background: url(\"../static/images/fondo-morado.jpg\");\n                            background-attachment: fixed;\n                        }\n                        .menuContainer{\n                            left: 100vw;\n                            background: url(\"../static/images/fondo-amarillo.jpg\");\n                            background-attachment: fixed;\n                        }\n                    "));
     }
   }]);
 
@@ -156,7 +233,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "E:\\proyectos\\soysuperkleber\\components\\Layout.js";
+/* harmony import */ var _style_layout_masterLayout_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/layout/_masterLayout.less */ "./style/layout/_masterLayout.less");
+/* harmony import */ var _style_layout_masterLayout_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_layout_masterLayout_less__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "d:\\proyectos\\soysuperkleber\\components\\Layout.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -177,6 +256,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
+ //estyles
+
 
 
 var Layout =
@@ -196,13 +277,13 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6
+          lineNumber: 11
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 12
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -210,7 +291,15 @@ function (_Component) {
         content: "width=device-width, initial-scale=1, user-scalable=no",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 13
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+        href: "https://fonts.googleapis.com/css?family=Anton|Montserrat",
+        rel: "stylesheet",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
         },
         __self: this
       })), this.props.children);
@@ -236,7 +325,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MenuElement; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "E:\\proyectos\\soysuperkleber\\components\\MenuElement.js";
+var _jsxFileName = "d:\\proyectos\\soysuperkleber\\components\\MenuElement.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -304,7 +393,7 @@ function (_Component) {
 /*! exports provided: components, default */
 /***/ (function(module) {
 
-module.exports = {"components":{"header":{"about":{"imgSrc":"../static/images/perfil.jpg","imgAlt":"perfil","titulo":"HOLAS","descripcion":"Soy Super Kleber","buttonText":"..."},"menu":[{"descripcion":"Contacto","iconCode":"","link":""},{"descripcion":"Curriculum","iconCode":"","link":""},{"descripcion":"Portafolio","iconCode":"","link":""},{"descripcion":"Instagram","iconCode":"","link":""}]}}};
+module.exports = {"components":{"header":{"about":{"imgSrc":"../static/images/perfil.jpg","imgAlt":"perfil","titulo":"¡Hola, soy Kleber!","descripcion":"Soy DESARROLADOR WEB especializado en Frontend UI/UX y soy publicista en marketing digital","buttonText":"O"},"menu":[{"descripcion":"Contacto","iconCode":"","link":"","key":"01"},{"descripcion":"Curriculum","iconCode":"","link":"","key":"02"},{"descripcion":"Portafolio","iconCode":"","link":"","key":"03"},{"descripcion":"Instagram","iconCode":"","link":"","key":"04"}]}}};
 
 /***/ }),
 
@@ -6218,7 +6307,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
 /* harmony import */ var _data_data_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../data/data.json */ "./data/data.json");
 var _data_data_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/data.json */ "./data/data.json", 1);
-var _jsxFileName = "E:\\proyectos\\soysuperkleber\\pages\\index.js";
+var _jsxFileName = "d:\\proyectos\\soysuperkleber\\pages\\index.js";
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }

@@ -1,15 +1,23 @@
+body {
+  margin: 0;
+  background: #55345b;
+  overflow-x: hidden;
+  font-family: "Montserrat";
+}
+
+.header {
+  width: 100%;
+}
 .about {
-  width: 100vw;
-  height: 100vh;
-  background: red;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   flex-direction: column;
-}
-.about img {
-  width: 20vw;
+  position: relative;
+  justify-content: flex-start;
+  background-attachment: fixed;
 }
 .about .about_1 {
   display: flex;
@@ -17,10 +25,162 @@
   align-items: center;
   text-align: center;
   width: 100%;
+  justify-content: space-between;
 }
-.about button {
-  width: 20vw;
-  height: 20vw;
+.about .about_1 img {
+  width: 11vw;
+  height: 11vw;
+  box-shadow: 4px 4px 7px 1px black;
+  border-radius: 6px;
+  border-radius: 0 0 6px 0;
+  border: 1.5px solid #65ffd4;
+  border-left: 0;
+  border-top: 0;
+}
+@media (max-width: 480px) {
+  .about .about_1 img {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+.about .about_1 button {
+  border: 0;
+  background: none;
+  border-radius: 6px;
+  box-shadow: 4px 4px 7px 1px black;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 11vw;
+  height: 11vw;
+  border-radius: 0 0 0 6px;
+  background: #55345b;
+  color: #65ffd4;
+  font-size: 7.5vw;
+  border: 1.5px solid #65ffd4;
+  border-right: 0;
+  border-top: 0;
+}
+@media (max-width: 480px) {
+  .about .about_1 button {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+@media (max-width: 480px) {
+  .about .about_1 button {
+    font-size: 15vw;
+  }
+}
+.about .about_2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 6px;
+  width: 85%;
+}
+.about .about_2 h1 {
+  background: #efe94e;
+  color: #55345b;
+  padding: 6px;
+  font-family: "Anton";
+  letter-spacing: 1.7px;
+}
+.about .about_2 h3 {
+  color: #65ffd4;
+  font-size: 2vw;
+  text-align: center;
+  line-height: 50px;
+}
+@media (max-width: 480px) {
+  .about .about_2 h3 {
+    font-size: 6vw;
+  }
+}
+.about .about_2 h3 strong {
+  background: #65ffd4;
+  color: #55345b;
+  padding: 6px;
+}
+.menuContainer {
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  left: 100vw;
+  background: #efe94e;
+  height: 100vh;
+  width: 100%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.menuContainer button {
+  border: 0;
+  background: none;
+  border-radius: 6px;
+  box-shadow: 4px 4px 7px 1px black;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #55345b;
+  font-size: 40px;
+  box-shadow: none;
+  border: 1.5px solid #55345b;
+  padding: 0;
+}
+.menuContainer .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+  height: 70%;
+}
+.menuContainer .menu li {
+  list-style: none;
+  width: 30vw;
+}
+@media (max-width: 480px) {
+  .menuContainer .menu li {
+    width: 60vw;
+  }
+}
+.menuContainer .menu li a {
+  text-decoration: none;
+  color: #55345b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  transition: 0.2s;
+  width: 100%;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 5vw;
+  font-family: "Anton";
+  letter-spacing: 1.7px;
+}
+@media (max-width: 480px) {
+  .menuContainer .menu li a {
+    font-size: 10vw;
+  }
+}
+.menuContainer .menu li a:hover {
+  background: #55345b;
+  color: #efe94e;
+  padding: 6px;
 }
 
 

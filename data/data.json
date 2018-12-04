@@ -4,30 +4,35 @@
             "about":{
                 "imgSrc": "../static/images/perfil.jpg",
                 "imgAlt": "perfil",
-                "titulo":"HOLAS",
-                "descripcion": "Soy Super Kleber",
-                "buttonText":"..."
+                "titulo":"¡Hola, soy Kleber!",
+                "descripcion": "Soy DESARROLADOR WEB especializado en Frontend UI/UX y soy publicista en marketing digital",
+                "buttonText":"O"
             },
             "menu":[
                 {
                     "descripcion":"Contacto",
                     "iconCode":"",
-                    "link": ""
+                    "link": "",
+                    "key": "01"
+                    
                 },
                 {
                     "descripcion":"Curriculum",
                     "iconCode":"",
-                    "link": ""
+                    "link": "",
+                    "key": "02"
                 },
                 {
                     "descripcion":"Portafolio",
                     "iconCode":"",
-                    "link": ""
+                    "link": "",
+                    "key": "03"
                 },
                 {
                     "descripcion":"Instagram",
                     "iconCode":"",
-                    "link": ""
+                    "link": "",
+                    "key": "04"
                 }
             ]
 

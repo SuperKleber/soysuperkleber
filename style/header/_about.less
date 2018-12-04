@@ -1,20 +1,72 @@
 .about{
-    width: 100vw;
-    height: 100vh;
-    background: url("../../static/images/fondo-amarillo.jpg");
-    & img{
-        width: @size;
-    };
+    width: 100%;
+    // height: 100vh;
+    
+    .display-flex();
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    background-attachment: fixed;
+    // background: @morado;
+    // background: url("../../static/images/fondo-amarillo.jpg");
+    
     & .about_1 {
         .display-flex;
         width: 100%;
-    }
+        justify-content: space-between;
+        & img{
+            .size;
 
-    & button{
-        width: @size;
-        height: @size;
-    }
-    .display-flex;
-    flex-direction: column;
+            box-shadow: @shadow;
+            border-radius: @border-radius;
+            border-radius: 0 0 @border-radius 0 ; 
+            border: @border-turquesa;
+            border-left: 0;
+            border-top: 0;
+        }
+        & button{
+            .button;
+            .display-flex();
+            .size;
 
+            border-radius:  0 0 0 @border-radius ; 
+            background: @morado;
+            color: @turquesa;
+            font-size: 7.5vw;
+            @media ( max-width: @wideMobileWidth){
+                font-size: 15vw; 
+            }
+            border: @border-turquesa;
+            border-right: 0;
+            border-top: 0;
+        }
+    }
+    & .about_2{
+        .display-flex;
+        flex-direction: column;
+        padding: @padding;
+        width: 85%;
+        // justify-items: center;
+        & h1 {
+            .strong(@b:@amarillo; @c:@morado;);
+            font-family: @font1;
+            letter-spacing: @letter;
+        }
+        & h3 {
+            color: @turquesa;
+            font-size: 2vw;
+            // padding: @padding;
+            text-align: center;
+
+            line-height: 50px;
+            @media (max-width: @wideMobileWidth){
+                font-size: 6vw;
+            }
+            & strong{
+                .strong(@b:@turquesa; @c:@morado);
+            }
+        }
+    }
+   
+    
 }
